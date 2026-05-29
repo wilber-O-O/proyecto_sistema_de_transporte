@@ -69,4 +69,3 @@ El modelo de datos se compone de **9 Entidades** estratégicas interconectadas m
  └── 📁 pro
       │── 📄 base de datos.sql        # Script de creación de tablas, llaves e inserts de prueba
       │── 📄 sistema_transporte.py    # Lógica de conexión y backend de la aplicación
-      └── 📄 .env                     # Variables de entorno (Configuración local protegida)
