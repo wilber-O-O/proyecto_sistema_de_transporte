@@ -825,7 +825,6 @@ def menu_principal():
 
 
 if __name__ == "__main__":
-    # Verificar conexión antes de mostrar el menú
     conn = conectar()
     if not conn:
         print("\n  Revisa la configuración en CONFIG (usuario, contraseña, base de datos).")
