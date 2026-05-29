@@ -11,12 +11,11 @@ from datetime import date, datetime
 from decimal import Decimal
 import os
 import sys
-from dotenv import load_dotenv # -- Añadimos esto para leer el .env
+from dotenv import load_dotenv 
 
-# Cargar las variables desde el archivo .env oculto
+
 load_dotenv()
 
-# Configuración segura: ya no exponemos la contraseña aquí
 CONFIG = {
     "host":     os.getenv("DB_HOST"),
     "user":     os.getenv("DB_USER"),
@@ -103,10 +102,6 @@ def elegir(opciones: list[str]) -> str:
         print("  Opción no válida.")
 
 def tabla(filas: list[dict], columnas: list[tuple]):
-    """
-    Imprime una tabla simple.
-    columnas = [(clave_dict, encabezado, ancho), ...]
-    """
     if not filas:
         info("Sin resultados.")
         return
