@@ -2,7 +2,7 @@
 ====================================================================
   SISTEMA DE TRANSPORTE PÚBLICO
   Menú de consola interactivo
-  Requiere: pip install mysql-connector-python
+  Requiere: install mysql-connector-python
 ====================================================================
 """
 import mysql.connector
