@@ -35,7 +35,7 @@ Para mitigar estas problemáticas, la arquitectura de la base de datos se estruc
 
 ## 📐 3. Modelo Entidad-Relación (MER)
 
-![Diagrama Entidad Relación](./pro/diagrama_mer.png)
+![Diagrama Entidad Relación](pro/diagrama.png)
 
 El modelo de datos se compone de **9 Entidades** estratégicas interconectadas mediante **6 Relaciones** de negocio bien definidas.
 
