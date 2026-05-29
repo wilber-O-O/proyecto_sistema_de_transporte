@@ -40,15 +40,19 @@ Para mitigar estas problemáticas, la arquitectura de la base de datos se estruc
 El modelo de datos se compone de **9 Entidades** estratégicas interconectadas mediante **6 Relaciones** de negocio bien definidas.
 
 ### 🏢 Entidades Principales
-* `USUARIO` (Superclase: Estudiante, Adulto Mayor)
-* `TARJETA` (Monedero electrónico de cobro)
-* `CHOFER` (Operador técnico de las unidades)
-* `AUTOBUS` (Unidad de transporte físico)
-* `LECTOR_DE_TARJETA` (Hardware validador a bordo)
-* `CANAL` (Superclase de puntos de recarga y atención)
-* `PUNTO_AUTORIZADO` (Establecimiento físico de recarga)
-* `APLICACION_OFICIAL` (Canal móvil digital)
-* `SERVICIO` (Modalidades de transporte: Troncal, Alimentador, etc.)
+* USUARIO: Superclase que centraliza los datos personales (CI, Nombre, Teléfono, Correo, Dirección). Se especializa en ESTUDIANTE, ADULTO_MAYOR y USUARIO_CORRIENTE.
+
+*TARJETA: Monedero electrónico que almacena el saldo, estado y límites de cobro diarios.
+
+*CHOFER: Personal operativo que conduce las unidades (identificado por su CI, Licencia y Teléfono).
+
+*AUTOBUS: Unidad de transporte físico donde se controlan las placas, ruta, SOAT y Revisión Técnica.
+
+*LECTOR_DE_TARJETA: Dispositivo electrónico de hardware instalado a bordo para procesar los pagos.
+
+*CANAL: Superclase abstracta para los medios de recarga. Se especializa en PUNTO_AUTORIZADO (físico) y APP_OFICIAL (digital).
+
+*SERVICIO: Modalidad o tipo de ruta de transporte que interactúa con el sistema.
 
 ### 🔗 Matriz de Relaciones y Cardinalidades
 
