@@ -42,17 +42,17 @@ El modelo de datos se compone de **9 Entidades** estratégicas interconectadas m
 ### 🏢 Entidades Principales
 * USUARIO: Superclase que centraliza los datos personales (CI, Nombre, Teléfono, Correo, Dirección). Se especializa en ESTUDIANTE, ADULTO_MAYOR y USUARIO_CORRIENTE.
 
-*TARJETA: Monedero electrónico que almacena el saldo, estado y límites de cobro diarios.
+* TARJETA: Monedero electrónico que almacena el saldo, estado y límites de cobro diarios.
 
-*CHOFER: Personal operativo que conduce las unidades (identificado por su CI, Licencia y Teléfono).
+* CHOFER: Personal operativo que conduce las unidades (identificado por su CI, Licencia y Teléfono).
 
-*AUTOBUS: Unidad de transporte físico donde se controlan las placas, ruta, SOAT y Revisión Técnica.
+* AUTOBUS: Unidad de transporte físico donde se controlan las placas, ruta, SOAT y Revisión Técnica.
 
-*LECTOR_DE_TARJETA: Dispositivo electrónico de hardware instalado a bordo para procesar los pagos.
+* LECTOR_DE_TARJETA: Dispositivo electrónico de hardware instalado a bordo para procesar los pagos.
 
-*CANAL: Superclase abstracta para los medios de recarga. Se especializa en PUNTO_AUTORIZADO (físico) y APP_OFICIAL (digital).
+* CANAL: Superclase abstracta para los medios de recarga. Se especializa en PUNTO_AUTORIZADO (físico) y APP_OFICIAL (digital).
 
-*SERVICIO: Modalidad o tipo de ruta de transporte que interactúa con el sistema.
+* SERVICIO: Modalidad o tipo de ruta de transporte que interactúa con el sistema.
 
 ### 🔗 Matriz de Relaciones y Cardinalidades
 
