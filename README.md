@@ -58,7 +58,7 @@ El modelo de datos se compone de **9 Entidades** estratégicas interconectadas m
 
 | Relación | Entidad A | Entidad B | Cardinalidad | Descripción |
 | :--- | :--- | :--- | :---: | :--- |
-| **OBTIENE** | `USUARIO` | `TARJETA` | $1:N$ | Un usuario posee una única tarjeta activa asociada a su identidad. |
+| **OBTIENE** | `USUARIO` | `TARJETA` | $1:N$ | Un usuario varias tarjeta (si se pierde puede obtener otra) activa asociada a su identidad. |
 | **PERTENECE** | `AUTOBUS` | `LECTOR_DE_TARJETA` | $1:1$ | Cada autobús tiene instalado exactamente un lector de tarjetas asignado. |
 | **MANEJA** | `CHOFER` | `AUTOBUS` | $N:M$ | Relación histórica de turnos; un chofer maneja varios buses y un bus es conducido por varios choferes en fechas distintas. |
 | **VALIDACION** | `TARJETA` | `LECTOR_DE_TARJETA` | $N:M$ | Registra cada transacción o cobro individual (Fecha, Hora, Monto) cuando una tarjeta pasa por un lector. |
